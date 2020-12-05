@@ -1,0 +1,7 @@
+name: MoudlePack
+main: kr.delay.moudlepack.Main
+version: 1.0
+api-version: 1.16
+author: [Delay]
+commands:
+  레인보우갑옷:
