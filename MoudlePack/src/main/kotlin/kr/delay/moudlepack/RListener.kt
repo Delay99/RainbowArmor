@@ -27,7 +27,7 @@ class RListener(private val main: Main) : Listener {
         if (!main.eP.contains(p.uniqueId)) return
         val `is` = e.itemDrop.itemStack
         val im = `is`.itemMeta
-        if (im.hasDisplayName() && im.displayName == "레인보우 갑옷") e.isCancelled = true
+        if (im!!.hasDisplayName() && im!!.displayName == "레인보우 갑옷") e.isCancelled = true
     }
 
     @EventHandler
