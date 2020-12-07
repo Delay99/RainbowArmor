@@ -25,26 +25,26 @@ class RGB(private val main: Main) {
     }
 
     fun rrRGB(): Color {
-        val inc = 15
-        val max = 255 / inc
-        if (gG <= max) {
+        val i = 15
+        val x = 255 / i
+        if (gG <= x) {
             gG++
-            g = (gG - 1) * inc
-        } else if (rrR <= max) {
+            g = (gG - 1) * i
+        } else if (rrR <= x) {
             rrR++
-            r = 255 - inc * (rrR - 1)
-        } else if (bB <= max) {
+            r = 255 - i * (rrR - 1)
+        } else if (bB <= x) {
             bB++
-            b = (bB - 1) * inc
-        } else if (ggG <= max) {
+            b = (bB - 1) * i
+        } else if (ggG <= x) {
             ggG++
-            g = 255 - inc * (ggG - 1)
-        } else if (rR <= max) {
+            g = 255 - i * (ggG - 1)
+        } else if (rR <= x) {
             rR++
-            r = (rR - 1) * inc
-        } else if (bbB <= max) {
+            r = (rR - 1) * i
+        } else if (bbB <= x) {
             bbB++
-            b = 255 - inc * (bbB - 1)
+            b = 255 - i * (bbB - 1)
         } else {
             rR = 0
             rrR = 0
